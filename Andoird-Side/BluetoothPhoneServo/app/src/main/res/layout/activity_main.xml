@@ -1,0 +1,254 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#f6ffb7">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/status"
+        android:textColor="#ff0004"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:text="Go"
+        android:id="@+id/goButton"
+        android:textColor="#ff0016"
+        android:background="@android:color/black"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/joint_5_checkBox"
+        android:layout_alignStart="@+id/joint_5_checkBox"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Joint 1: "
+        android:id="@+id/joint_1_textView"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/status"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textIsSelectable="false" />
+
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/joint_1_seekBar"
+        android:background="@android:color/darker_gray"
+        android:progressTint="#ff000f"
+        android:progressBackgroundTint="#ff0008"
+        android:layout_below="@+id/joint_1_textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Joint 2: "
+        android:id="@+id/joint_2_textView"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/joint_1_seekBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textIsSelectable="false" />
+
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/joint_2_seekBar"
+        android:background="@android:color/darker_gray"
+        android:progressTint="#ff000f"
+        android:progressBackgroundTint="#ff0008"
+        android:layout_below="@+id/joint_2_textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Joint 3: "
+        android:id="@+id/joint_3_textView"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_below="@+id/joint_2_seekBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="28dp"
+        android:textIsSelectable="false" />
+
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/joint_3_seekBar"
+        android:background="@android:color/darker_gray"
+        android:progressTint="#ff000f"
+        android:progressBackgroundTint="#ff0008"
+        android:layout_below="@+id/joint_3_textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Joint 4: "
+        android:id="@+id/joint_4_textView"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/joint_3_seekBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textIsSelectable="false" />
+
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/joint_4_seekBar"
+        android:background="@android:color/darker_gray"
+        android:progressTint="#ff000f"
+        android:progressBackgroundTint="#ff0008"
+        android:layout_below="@+id/joint_4_textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clamp Control (Open or Close)"
+        android:id="@+id/joint_5_checkBox"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_below="@+id/joint_4_seekBar"
+        android:layout_alignLeft="@+id/joint_4_seekBar"
+        android:layout_alignStart="@+id/joint_4_seekBar"
+        android:layout_marginTop="28dp" />
+
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:text="Task"
+        android:id="@+id/taskButton"
+        android:textColor="#ff0016"
+        android:background="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/joint_4_seekBar"
+        android:layout_alignEnd="@+id/joint_4_seekBar" />
+
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:text="Plot"
+        android:id="@+id/plotButton"
+        android:textColor="#ff0016"
+        android:background="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/taskButton"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/joint_1_plusButton"
+        android:layout_alignBottom="@+id/joint_1_textView"
+        android:layout_alignRight="@+id/joint_5_checkBox"
+        android:layout_alignEnd="@+id/joint_5_checkBox"
+        android:textStyle="bold" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/joint_1_minusButton"
+        android:layout_alignTop="@+id/joint_1_plusButton"
+        android:layout_alignRight="@+id/joint_1_seekBar"
+        android:layout_alignEnd="@+id/joint_1_seekBar"
+        android:textStyle="bold"
+        android:layout_above="@+id/joint_1_seekBar" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/joint_2_minusButton"
+        android:layout_alignRight="@+id/joint_2_seekBar"
+        android:layout_alignEnd="@+id/joint_2_seekBar"
+        android:textStyle="bold"
+        android:layout_above="@+id/joint_2_seekBar" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/joint_3_minusButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textStyle="bold"
+        android:layout_above="@+id/joint_3_seekBar" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/joint_4_minusButton"
+        android:layout_alignRight="@+id/joint_3_seekBar"
+        android:layout_alignEnd="@+id/joint_3_seekBar"
+        android:textStyle="bold"
+        android:layout_above="@+id/joint_4_seekBar" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/joint_2_plusButton"
+        android:layout_above="@+id/joint_2_seekBar"
+        android:layout_alignLeft="@+id/joint_1_plusButton"
+        android:layout_alignStart="@+id/joint_1_plusButton"
+        android:textStyle="bold" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/joint_3_plusButton"
+        android:layout_above="@+id/joint_3_seekBar"
+        android:layout_toLeftOf="@+id/joint_3_minusButton"
+        android:layout_toStartOf="@+id/joint_3_minusButton"
+        android:textStyle="bold" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/joint_4_plusButton"
+        android:layout_alignLeft="@+id/joint_3_plusButton"
+        android:layout_alignStart="@+id/joint_3_plusButton"
+        android:textStyle="bold"
+        android:layout_above="@+id/joint_4_seekBar" />
+
+</RelativeLayout>
