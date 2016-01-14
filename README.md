@@ -8,9 +8,9 @@
 #App
 The app connects Bluetooth on-board the phone to the HC-06 module. Once the connection is established the servos can be directly controlled using the app. 
 
-![Alt text](https://github.com/InderPabla/RemoteCrane/blob/master/4.jpg "")
+![Alt text](https://github.com/InderPabla/RemoteCrane/blob/master/4.png "")
 
-![Alt text](https://github.com/InderPabla/RemoteCrane/blob/master/5.jpg "")
+![Alt text](https://github.com/InderPabla/RemoteCrane/blob/master/5.png "")
 
 ###There are 5 main features of this app.
 ###Sliders: allow user to move the joint any where they want.
