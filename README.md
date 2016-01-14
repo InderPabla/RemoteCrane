@@ -1,5 +1,5 @@
 # Remote Crane
-# Control 4 - 9 gram servos as a crane to pick up small objects with decent precision. 
+##### Control 4 - 9 gram servos as a crane to pick up small objects with decent precision. 
 
 # Demo Video
 [![ScreenShot](https://github.com/InderPabla/RemoteCrane/blob/master/2.jpg)](http://youtu.be/CrxVyGLnWhg)
